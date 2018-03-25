@@ -18,6 +18,10 @@ module SteemApi
       normalized_json.where("JSON_VALUE(json_metadata, '$.app') LIKE ?", "%/#{version}")
     }
     
+    scope :tagged, lambda { |*tag|
+      normalized_json.where("JSON_VALUE(json_metadata, '$.tags') IN(?)", [*tag].flatten)
+    }
+    
     scope :decorate_metadata, -> {
       previous_select = if all.select_values.none?
         Arel.star

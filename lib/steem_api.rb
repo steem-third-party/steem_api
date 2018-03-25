@@ -40,6 +40,7 @@ require "steem_api/models/tx/custom/reblog"
 
 require "steem_api/models/vo/author_reward"
 require "steem_api/models/vo/curation_reward"
+require "steem_api/models/vo/comment_benefactor_reward"
 require "steem_api/models/vo/fill_convert_request"
 require "steem_api/models/vo/fill_order"
 require "steem_api/models/vo/fill_vesting_withdraw"

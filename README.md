@@ -14,9 +14,9 @@ As of 2018-01-23, [SteemSQL is moving to a monthly subscription model](https://s
 
 ### How To Use (Standalone)
 - `gem install steem_api`
-- export STEEMSQL_HOST=<your steemsql host>
-- export STEEMSQL_USERNAME=<your steemsql username>
-- export STEEMSQL_PASSWORD=<your steemsql password>
+- `export STEEMSQL_HOST=<your steemsql host>`
+- `export STEEMSQL_USERNAME=<your steemsql username>`
+- `export STEEMSQL_PASSWORD=<your steemsql password>`
 - `irb`
 - `require 'steem_api'`
 - `SteemApi::Comment.last`
